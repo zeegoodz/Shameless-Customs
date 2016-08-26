@@ -1,0 +1,376 @@
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+	body,input,textarea,select
+	{
+		line-height: 23.5px;
+		font-size: 13pt;
+		background-color: black;
+		color: white;
+
+	}
+
+	.container
+	{
+		margin-left:auto;
+		margin-right:auto;
+		width:auto;
+	}
+
+	.container.small
+	{
+		width:75%
+	}
+
+	.container.big
+	{
+		width:100%;
+		max-width:125%;
+		min-width:100%
+	}
+
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	#main-wrapper
+	{
+		padding: 128px 0px 96px 0px;
+		width:100%;
+	}
+
+
+	.homepage #main-wrapper
+	{
+		padding: 32px 0px;
+		background: #1c1c1c;
+	}
+
+	#banner-wrapper
+	{
+	//	padding: 10px 0px 0px 0px;
+
+	}
+
+	#footer-wrapper
+	{
+		padding: 48px 0px 0px 0px;
+	}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+	#header
+	{
+		padding: 80px 0px;
+		text-align: center;
+
+	}
+
+	#headerbreak
+	{
+		margin-right:50px;
+	}
+
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+
+		padding: 10px 0px 50px 0px;
+		width: 30%;
+		margin-left: 35%;
+		background-size:100% auto;
+		height: 135px;
+		background-image: url('Logo.png');
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+
+
+		#logo a
+		{
+			width: 272px;
+			height: 176px;
+		}
+
+			#logo a > span
+			{
+				font-size: 35px;
+				padding: 8px 0px;
+			}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+
+		padding: 10px 0px 10px 0px;
+		margin: 0px 0px 0px 0px;
+		width: 100%;
+		height: ;
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+
+
+	#banner ul{
+//		height: 300px;
+	}
+
+	.bxslider{
+		margin: 10px 10px 10px 10px;
+	}
+	.bxslider img {
+		width: 100%;
+		height: 524px;
+	}
+
+
+
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav
+	{
+		text-align: center;
+		position: absolute;
+		top: 200px;
+		left: 0;
+		width: 100%;
+		height: 64px;
+		cursor: default;
+	}
+
+		#nav > ul
+		{
+			margin: 0;
+		}
+
+			#nav > ul > li > ul
+			{
+				display: none;
+			}
+
+			#nav > ul > li
+			{
+				display: inline-block;
+				margin-left: 36px;
+			}
+
+				#nav > ul > li > span,
+				#nav > ul > li > a
+				{
+					color: #fff;
+					text-decoration: none;
+					outline: 0;
+					border: 0;
+					border: solid 1px rgba(255,255,255,0);
+					border-radius: 5.5px;
+					padding: 5px 16px 5px 16px;
+					letter-spacing: 2.5px;
+					text-transform: uppercase;
+					font-size: 24px;
+					font-family: 'Agency FB', sans-serif;
+					font-weight: 700;
+
+				}
+
+			#nav > ul > li.active > span
+			{
+				color: #00ff00;
+			}
+			#nav > ul > li.active > a
+			{
+				color: #00ff00;
+			}
+			#nav > ul > li:hover > span
+			{
+				color: #00ff00;
+			}
+			#nav > ul > li:hover > a
+			{
+				color: #00ff00;
+			}
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+	#footer
+	{
+		text-align: center;
+	}
+
+	#footer h2
+	{
+		font-size: 24px;
+	}
+
+	#footer p
+	{
+		padding: 0px 0px;
+	}
+
+	.contact > li
+	{
+		display: inline-block;
+		margin-left: 40px;
+
+	}
+
+/*********************************************************************************/
+/* Intro                                                                         */
+/*********************************************************************************/
+
+	#intro
+	{
+	}
+
+	#intro header
+	{
+		padding-top: 16px;
+	}
+		#intro header h2
+		{
+			font-size: 24px;
+			text-align: center;
+		}
+
+		#intro img
+		{
+			display: block;
+			padding: 5px;
+			background: rgba(0,0,0,0.15);
+			border: solid 1px rgba(0,0,0,0.5);
+			border-radius: 5px;
+			box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.3), 0px 1px 0px 0px rgba(255,255,255,0.125);
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		#intro p
+		{
+			text-align:center;
+		}
+
+
+		#intro section
+		{
+			position: relative;
+		}
+
+			#intro section:before
+			{
+				content: '';
+				display: block;
+				width: 1px;
+				height: 100%;
+				background: #333;
+				position: relative;
+				top: 0;
+				left: 25px;
+			}
+
+			#intro section:first-child:before
+			{
+				display: none;
+			}
+
+
+/*********************************************************************************/
+/* Section                                                                       */
+/*********************************************************************************/
+
+
+	.row > *
+	{
+		float:left;
+		box-sizing:border-box
+	}
+
+
+	.row:after
+	{
+		content:'';
+		display:block;
+		clear:both;
+		height:0
+	}
+
+	.row :first-child > *
+	{
+		padding-top:0
+	}
+
+	.third
+	{
+		 width: 33.3333%;
+
+	}
+
+/*********************************************************************************/
+/* Icons                                                                         */
+/*********************************************************************************/
+
+	.icon
+	{
+
+	}
+
+	.icon-youtube-sign:before
+	{
+		content:"\f166";
+	}
+
+	.icon-youtube:before
+	{
+		content:"\f167";
+	}
+
+
+/*********************************************************************************/
+/* Intro                                                                         */
+/*********************************************************************************/
+
+	#intro
+	{
+		overflow: hidden;
+		text-align: center;
+	}
+
+		#intro header h2
+		{
+			font-weight: 700;
+		}
+
+		#intro .number
+		{
+			display: inline-block;
+			background: #2e2e2e;
+			width: 80px;
+			height: 80px;
+			line-height: 80px;
+			border-radius: 40px;
+			letter-spacing: 1.5px;
+			font-family: 'Agency FB', sans-serif;
+			text-align: center;
+			font-weight: 700;
+			color: #FFF;
+		}
+
+		#intro section:last-child
+		{
+			border-right: none;
+		}
