@@ -6,7 +6,7 @@ class Dao {
   private $host = "localhost";
   private $db = "zgoodspe";
   private $user = "zgoodspe";
-  private $pass = "radsies1";
+  private $pass = "removed";
 
   public function getConnection () {
     return
