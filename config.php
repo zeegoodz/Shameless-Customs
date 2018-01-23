@@ -1,7 +1,7 @@
 <?php
 
 //connect to the database
-mysql_connect('localhost', 'zgoodspe', 'radsies1') or
+mysql_connect('localhost', 'zgoodspe', 'password') or
 	die("Couldn't connect to the database");
 
 mysql_select_db('zgoodspe') or
